@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,7 +7,7 @@
 
 void print_number(int n)
 {
-unsiged int n1;
+unsigned int n1;
 
 if (n < 0)
 {
