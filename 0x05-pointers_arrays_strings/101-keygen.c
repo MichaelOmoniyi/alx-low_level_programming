@@ -15,7 +15,7 @@ randnum = (rand() % 125) + 1;
 printf("%c", randnum);
 total -= randnum;
 }
-printf("%c", total);
+printf("%c\n", total);
 
 return (0);
 }

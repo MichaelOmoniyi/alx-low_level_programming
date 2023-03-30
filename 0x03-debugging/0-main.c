@@ -5,6 +5,8 @@
  * Return: 0
  */
 
+extern void positive_or_negative(int i);
+
 int main(void)
 {
 	int i;
