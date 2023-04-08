@@ -3,6 +3,7 @@
 /**
  * is_palindrome - Checks if a string is a palindrome or not.
  * @s: String to be checked.
+ * @len: Length of string.
  * Return: 1, if string is palindrome and 0 if not.
  */
 
@@ -11,11 +12,11 @@ int str_length(char *s);
 
 int is_palindrome(char *s)
 {
-    int length;
+int length;
 
-    length = str_length(s);
+length = str_length(s);
 
-    return (base_is_palindrome(s, --length);
+return (base_is_palindrome(s, --length));
 }
 
 /**
