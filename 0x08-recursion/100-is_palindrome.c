@@ -14,7 +14,7 @@ int is_palindrome(char *s)
 {
 int length;
 
-length = str_length(s);
+length = str_length(s) - 1;
 
 return (base_is_palindrome(s, --length));
 }
@@ -29,7 +29,7 @@ int str_length(char *s)
 {
 if (*s != '\0')
 {
-return (0);
+return (1);
 }
 else
 {
