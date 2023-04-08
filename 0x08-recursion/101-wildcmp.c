@@ -21,10 +21,10 @@ if (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2))
 {
 return (1);
 }
+}
 else
 {
 return ( wildcmp(s1 + 1, s2 + 1);
-}
 }
 }
 return (0);
