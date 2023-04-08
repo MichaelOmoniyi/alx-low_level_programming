@@ -11,3 +11,7 @@
 5-sqrt_recursion.c - Contains a function that returns the natural square root of a number.
 
 6-is_prime_number.c - Contains a function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+100-is_palindrome.c - Checks if a string is palindrome or not.
+
+101-wildcmp.c - Compares two strings and consider if they are identical.
