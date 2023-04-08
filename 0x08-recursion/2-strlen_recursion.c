@@ -13,9 +13,11 @@ len = 0;
 
 if (*s == '\0')
 {
-return (len);
+return (0);
 }
-_strlen_recursion(s + 1);
-len++;
+else
+{
+return (1 + _strlen_recursion(s + 1));
+}
 }
 

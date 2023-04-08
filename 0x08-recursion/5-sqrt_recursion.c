@@ -29,7 +29,7 @@ if (n == exp * exp)
 {
 return (exp);
 }
-else if (sq < n)
+else if (exp < n)
 {
 return (_sub_sqrt(n, ++exp));
 }
