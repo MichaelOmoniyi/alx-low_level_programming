@@ -3,7 +3,6 @@
 /**
  * is_palindrome - Checks if a string is a palindrome or not.
  * @s: String to be checked.
- * @len: Length of string.
  * Return: 1, if string is palindrome and 0 if not.
  */
 
