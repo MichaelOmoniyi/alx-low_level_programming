@@ -7,11 +7,10 @@
  * Return: 1, if string is palindrome and 0 if not.
  */
 
-int base_is_palindrome(char *s, int len);
-int str_length(char *s);
-
 int is_palindrome(char *s)
 {
+int base_is_palindrome(char *s, int len);
+int str_length(char *s);
 int length;
 
 length = str_length(s) - 1;
@@ -46,7 +45,7 @@ return (1 + str_length(++s));
 
 int base_is_palindrome(char *s, int len)
 {
-if (*s == *(s + 1))
+if (*s == *(s + len))
 {
 if (len <= 0)
 {
