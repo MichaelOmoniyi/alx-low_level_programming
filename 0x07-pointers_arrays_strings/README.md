@@ -9,3 +9,9 @@ This directory contains tasks/files on pointer, arrays and strings.
 3-strspn.c - Contains a function that gets the length of a prefix substring.
 
 4-strpbrk.c - Contains a function that searches a string for any of a set of bytes.
+
+5-strstr.c - Contains a function that locates a substring in another string.
+
+7-print_chessboard.c - Prints a chessboard.
+
+8-print_diagsums.c - Contains a function that prints the sum of the two diagonals of a square matrix of integers.

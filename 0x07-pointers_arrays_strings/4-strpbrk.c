@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * strpbrk -  locates the first occurrence in the string s
+ * _strpbrk -  locates the first occurrence in the string s
  * of any of the bytes in the string accept.
  * @s: A pointer string
  * @accept: String to be searched through
@@ -20,9 +20,11 @@ for (i = accept; *accept != '\0'; i++)
 if (*s == *accept)
 {
 return (s);
+break;
 }
 }
 ++s;
 }
-return (NULL);
+*s = 0;
+return (s);
 }
