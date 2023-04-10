@@ -4,6 +4,7 @@
  * _strncat - Concatenates two strings.
  * @dest: String to be joined to.
  * @src: String to be joined from.
+ * @n: Number of characters to be joined.
  * Return: 0
  */
 
