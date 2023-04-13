@@ -29,7 +29,7 @@ return (i);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-int num, len, i, j;
+int num, length, i, j;
 
 num = n;
 
@@ -50,9 +50,9 @@ if (num >= str_len(s2))
 num = str_len(s2);
 }
 
-len = str_len(s1) + num + 1;
+length = str_len(s1) + num + 1;
 
-ptr = malloc(sizeof(*ptr)
+ptr = malloc(sizeof(*ptr));
 if (ptr == NULL)
 {
 return (NULL);
