@@ -29,8 +29,9 @@ return (i);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-int num, length, i, j;
+int num, i, j, length;
 
+length = 0;
 num = n;
 
 if (s1 == NULL)
@@ -52,7 +53,7 @@ num = str_len(s2);
 
 length = str_len(s1) + num + 1;
 
-ptr = malloc(sizeof(*ptr));
+ptr = malloc(length);
 if (ptr == NULL)
 {
 return (NULL);
