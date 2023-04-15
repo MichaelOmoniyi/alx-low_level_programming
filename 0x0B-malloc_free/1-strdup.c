@@ -17,13 +17,13 @@ if (str == NULL)
 {
 return (NULL);
 }
-
+i = 0;
 while (str[i] != '\0')
 {
 i++;
 }
 
-str_new = malloc(sizeof(*str_new) * i + 1);
+str_new = malloc(i * sizeof(*str_new) + 1);
 if (str_new == NULL)
 {
 return (NULL);
