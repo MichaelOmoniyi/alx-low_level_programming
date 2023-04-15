@@ -25,7 +25,7 @@ k++;
 }
 k++;
 
-arr = malloc(k * sizeof(*arr));
+arr = malloc(sizeof(*arr) * k);
 if (arr == NULL)
 return (NULL);
 
