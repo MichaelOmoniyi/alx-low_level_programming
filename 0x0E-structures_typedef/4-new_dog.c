@@ -32,9 +32,9 @@ free(dog);
 free(dog->name);
 return(NULL);
 }
-_strncpy(dog->name, name);
-_strncpy(dog->owner, owner);
-dog->age = age
+_strcpy(dog->name, name);
+_strcpy(dog->owner, owner);
+dog->age = age;
 
 return (dog);
 }
