@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 int arg1 = atoi(argv[1]);
 int arg2 = atoi(argv[3]);
 char operator = *argv[2];
-char output;
+int output;
 int (*op_func)(int, int);
 
 if (argc != 4)
