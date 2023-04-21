@@ -13,3 +13,4 @@
 0x0D-preprocssor
 0x0E-structures_typedef
 0x0F-function_pointers
+0x10-variadic_functions
