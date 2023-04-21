@@ -6,7 +6,8 @@
  * Return: 0, when successful.
  */
 
-int op_codes(int bytes)
+/**
+ * int op_codes(int bytes)
 {
 char *main_ptr = (char *)op_codes;
 
@@ -23,6 +24,7 @@ printf("%02hhx ", main_ptr[i]);
 }
 return (0);
 }
+**/
 
 /**
  * main - main function.
@@ -30,15 +32,19 @@ return (0);
  * @argv: Array of arguments.
  * Return: 0, when successful.
  */
+
 int main(int argc, char *argv[])
 {
+int bytes, i;
+char *main_ptr;
+
 if (argc != 2)
 {
 printf("Error\n");
 exit(1);
 }
 
-int bytes = atoi(argv[1]);
+bytes = atoi(argv[1]);
 
 if (bytes < 0)
 {
@@ -46,7 +52,17 @@ printf("Error\n");
 exit(2);
 }
 
-op_codes(bytes);
+main_ptr = (char *)main;
+
+for (i = 0; i < bytes; i++)
+{
+if (i == bytes - 1)
+{
+printf("%02hhx\n", main_ptr[i]);
+break;
+}
+printf("%02hhx ", main_ptr[i]);
+}
 
 return (0);
 }
