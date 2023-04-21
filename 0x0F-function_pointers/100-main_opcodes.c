@@ -8,20 +8,20 @@
 
 int op_codes(int bytes)
 {
-    char *main_ptr = (char *)op_codes;
+char *main_ptr = (char *)op_codes;
 
-    int i;
+int i;
 
-    for (i = 0; i < bytes; i++)
-    {
-        if (i == bytes - 1)
-        {
-            printf("%02hhx\n", main_ptr[i]);
-            break;
-        }
-        printf("%02hhx ", main_ptr[i]);
-    }
-    return (0);
+for (i = 0; i < bytes; i++)
+{
+if (i == bytes - 1)
+{
+printf("%02hhx\n", main_ptr[i]);
+break;
+}
+printf("%02hhx ", main_ptr[i]);
+}
+return (0);
 }
 
 /**
@@ -32,21 +32,21 @@ int op_codes(int bytes)
  */
 int main(int argc, char *argv[])
 {
-    if (argc != 2)
-    {
-        printf("Error\n");
-        return 1;
-    }
+if (argc != 2)
+{
+printf("Error\n");
+return 1;
+}
 
-    int bytes = atoi(argv[1]);
+int bytes = atoi(argv[1]);
 
-    if (bytes < 0)
-    {
-        printf("Error\n");
-        return 2;
-    }
+if (bytes < 0)
+{
+printf("Error\n");
+return 2;
+}
 
-    op_codes(bytes);
+op_codes(bytes);
 
-    return 0;
+return 0;
 }
