@@ -16,9 +16,10 @@ for (len = 0; dest[len] != '\0'; len++)
 {
 ;
 }
-for (count = 0; n > 0 && src[count] != 0; count++)
+for (count = 0; src[count] != '\0' && n > 0; len++, count++, n--)
 {
 dest[len] = src[count];
 }
+dest[len] = '\0';
 return (dest);
 }
