@@ -18,7 +18,7 @@ len++;
 for (count = 0; src[count] != '\0'; count++)
 {
 dest[len] = src[count];
-len++
+len++;
 }
 dest[len] = '\0';
 return (dest);
