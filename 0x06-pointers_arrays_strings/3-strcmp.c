@@ -17,5 +17,6 @@ if (s1[i] != s2[i])
 result = s1[i] - s2[i];
 return (result);
 }
+}
 return (0);
 }
