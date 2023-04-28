@@ -19,11 +19,9 @@ return (NULL);
 }
 new_node->str = strdup(str);
 
-n = 0;
-while (str[n])
-{
-n++;
-}
+for (n = 0; str[n]; n++)
+;
+
 new_node->len = n;
 new_node->next = *head;
 *head = new_node;
