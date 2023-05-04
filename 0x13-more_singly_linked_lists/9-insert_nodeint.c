@@ -12,8 +12,7 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *new_node;
-listint_t *temp = *head;
+listint_t *new_node, *temp = *head;
 unsigned int node;
 
 new_node = malloc(sizeof(listint_t));
