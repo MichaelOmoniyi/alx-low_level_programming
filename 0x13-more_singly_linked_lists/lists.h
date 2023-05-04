@@ -6,7 +6,7 @@
 #include <string.h>
 
 /**
- * sturct listint_s - singly linked list
+ * typedef sturct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
