@@ -1,11 +1,12 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - Deletes the node
+ * insert_nodeint_at_index - Deletes the node
  * at index of a listint_t linked list.
  *
  * @head: Pointer to the list.
- * @index: Node index.
+ * @idx: Node index.
+ * &n: New node value
  *
  * Return: 1, if it suceeded, -1 i it fails.
  */
