@@ -10,7 +10,7 @@
  * Return: 1, if it suceeded, -1 i it fails.
  */
 
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 listint_t *new_node, *temp = *head;
 unsigned int node;
@@ -25,7 +25,7 @@ return (NULL);
 new_node->n = n;
 
 if (idx == 0)
-
+{
 new_node->next = temp;
 *head = new_node;
 return (new_node);
