@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - Frees a lsitint_t list.
+ * free_listint2 - Frees a lsitint_t list.
  * @head: Pointer to the string.
  *
  * Return: void.
