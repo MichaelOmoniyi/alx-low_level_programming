@@ -16,7 +16,7 @@ for (i = 0; (i < index) && (head->next); i++)
 head = head->next;
 }
 
-if (n < index)
+if (i < index)
 {
 return (NULL);
 }
