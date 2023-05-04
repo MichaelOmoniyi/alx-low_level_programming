@@ -6,7 +6,7 @@
  *
  * @head: Pointer to the list.
  * @idx: Node index.
- * &n: New node value
+ * @n: New node value
  *
  * Return: 1, if it suceeded, -1 i it fails.
  */
