@@ -12,12 +12,12 @@ unsigned long int power(unsigned int base, unsigned int power)
 unsigned long int exp;
 unsigned int i;
 
-num = 1;
+exp = 1;
 for (i = 1; i <= power; i++)
 {
-num *= base;
+exp *= base;
 }
-return (num);
+return (exp);
 }
 
 /**
@@ -25,7 +25,6 @@ return (num);
  * @n: Number to be converted to binary.
  * Return: void.
  */
-
 void print_binary(unsigned long int n);
 {
 unsigned long int divisor, check;
