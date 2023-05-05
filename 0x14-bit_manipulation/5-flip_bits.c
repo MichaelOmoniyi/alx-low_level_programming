@@ -16,11 +16,11 @@ unsigned long int exclusive = n ^ m;
 
 for (i = 63; i >= 0; i--)
 {
-current = exclusive >> 1;
-if (current & 1)
+current_index = exclusive >> 1;
+if (current_index & 1)
 {
 count++;
 }
-
+}
 return (count);
 }
