@@ -25,7 +25,7 @@ return (exp);
  * @n: Number to be converted to binary.
  * Return: void.
  */
-void print_binary(unsigned long int n);
+void print_binary(unsigned long int n)
 {
 unsigned long int divisor, check;
 char flag;
