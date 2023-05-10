@@ -26,7 +26,7 @@ if (file == -1)
 return (-1);
 }
 
-for(text_len = 0; text_content[text_len]; text_len++)
+for (text_len = 0; text_content[text_len]; text_len++)
 {
 ;
 }
@@ -38,7 +38,7 @@ if (file_write == -1)
 return (-1);
 }
 
-close (file);
+close(file);
 
 return (1);
 }
