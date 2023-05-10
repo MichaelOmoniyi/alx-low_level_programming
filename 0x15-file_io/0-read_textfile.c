@@ -24,7 +24,7 @@ if (file == -1)
 return (0);
 }
 
-buffer = malloc(sizeof(char) * (letters +1));
+buffer = malloc(sizeof(char) * (letters + 1));
 
 if (buffer == NULL)
 {
