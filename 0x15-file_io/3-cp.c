@@ -8,14 +8,14 @@
  * @argv: arguments vector.
  * Return: no return.
  */
-void error_file(int file_from, int file_to, char *argv[])
+void file_error(int file_from, int file_to, char *argv[])
 {
-	if (file_from == -1)
+	if (src_file == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	if (file_to == -1)
+	if (dest_file == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
@@ -42,17 +42,17 @@ int main(int argc, char *argv[])
 
 	src_file = open(argv[1], O_RDONLY);
 	dest_file = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	error_file(file_from, file_to, argv);
+	file_error(file_from, file_to, argv);
 
 	content_len = 1024;
 	while (content_len == 1024)
 	{
 		content_len = read(src_file, buf, 1024);
 		if (content_len == -1)
-			error_file(-1, 0, argv);
+			file_error(-1, 0, argv);
 		write_file = write(dest_file, buf, content_len);
 		if (write_file == -1)
-			error_file(0, -1, argv);
+			file_error(0, -1, argv);
 	}
 
 	error = close(src_file);
