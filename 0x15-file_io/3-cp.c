@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	src_file = open(argv[1], O_RDONLY);
 	dest_file = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	file_error(file_from, file_to, argv);
+	file_error(src_file, dest_file, argv);
 
 	content_len = 1024;
 	while (content_len == 1024)
