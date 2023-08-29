@@ -10,5 +10,25 @@
 
 char *_strstr(char *haystack, char *needle)
 {
+if (*needle == '\0')
+{
+return(haystack);
+}
 
+while (*haystack)
+{
+while (*needle && *needle == *haystack)
+{
+    needle++;
+    haystack++;
+}
+
+if (*needle == '\0')
+{
+return(haystack);
+}
+
+haystack++;
+}
+return(haystack);
 }
