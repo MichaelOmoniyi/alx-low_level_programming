@@ -5,5 +5,5 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 
 #Creates the executable file (school)
-school: $(OBJ)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
