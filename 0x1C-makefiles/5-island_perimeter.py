@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+""" This module calculates the perimeter of an island """
+
+
 def island_perimeter(grid):
     """ The function returns the perimeter of the island described in grid """
 
