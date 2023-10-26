@@ -1,0 +1,7 @@
+#variables
+CC = gcc
+SRC = main.c school.c 
+
+#Creates the executable file (school)
+all: $(SRC)
+	$(CC) $(SRC) -o school
